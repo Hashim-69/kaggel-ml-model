@@ -1,0 +1,45 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (often too large for git)
+*.csv
+*.h5
+*.pkl
+*.pickle
+data/
+datasets/
+
+# Model files
+*.model
+*.h5
+models/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kaggle
+kaggle.json
