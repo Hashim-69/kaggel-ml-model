@@ -1,31 +1,46 @@
-# My First Machine Learning Model
+# My Machine Learning Journey
 
 ## Overview
-This is my first machine learning notebook, marking the beginning of my ML journey. I've previously worked with Jupyter Notebook and Google Colab, but this is my first time sharing my work publicly. This repository will be updated regularly as I progress through my machine learning coursework.
+This repository documents my machine learning learning journey, starting from my first model to more advanced concepts. I've previously worked with Jupyter Notebook and Google Colab, and I'm now publicly sharing my progress as I work through Kaggle's Introduction to Machine Learning course.
 
-## Project Description
-This notebook implements a **Decision Tree Regressor** to predict house prices using the Iowa Housing dataset. It's an exercise from Kaggle's [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.
+## Projects in This Repository
 
-## What I Learned
+### 1. 📘 First Machine Learning Model
+**File:** `exercise-your-first-machine-learning-model.ipynb`
+
+My very first ML model! Built a **Decision Tree Regressor** to predict house prices.
+
+**What I learned:**
 - Loading and exploring datasets with pandas
-- Selecting target variables for prediction
-- Creating feature sets from raw data
-- Building and training a Decision Tree model using scikit-learn
-- Making predictions with a trained model
-- Understanding the basic ML workflow: data → model → predictions
+- Selecting features and target variables
+- Training a scikit-learn model
+- Making predictions
+
+
+
+---
+
+### 2. 📊 Model Validation
+**File:** `exercise-model-validation.ipynb`
+
+Learned how to properly validate models and measure their accuracy.
+
+**What I learned:**
+- Train/test data splitting
+- Why testing on training data is misleading
+- Calculating Mean Absolute Error (MAE)
+- Evaluating model performance on unseen data
+
+**Results:** Achieved MAE of $29,652.93 on validation data
+
+
+
+---
 
 ## Dataset
-**Iowa Housing Dataset** - Contains information about residential homes in Ames, Iowa, including features like:
-- Lot area and configuration
-- Year built and remodeled
-- Number of bedrooms, bathrooms, and rooms
-- Square footage of different floors
-- Overall quality and condition ratings
+**Iowa Housing Dataset** - Contains information about residential homes in Ames, Iowa
 
-**Target Variable:** `SalePrice` - The sale price of each house
-
-## Features Used
-The model uses the following features to predict house prices:
+**Features used:**
 - `LotArea` - Lot size in square feet
 - `YearBuilt` - Original construction date
 - `1stFlrSF` - First floor square feet
@@ -34,82 +49,71 @@ The model uses the following features to predict house prices:
 - `BedroomAbvGr` - Number of bedrooms above ground
 - `TotRmsAbvGrd` - Total rooms above ground
 
+**Target:** `SalePrice` - The sale price of each house
+
 ## Technologies Used
 - **Python 3.11**
 - **pandas** - Data manipulation and analysis
-- **scikit-learn** - Machine learning model (DecisionTreeRegressor)
+- **scikit-learn** - Machine learning models and validation
 - **Kaggle Notebooks** - Development environment
-
-## Key Code Snippets
-
-### Loading the Data
-```python
-import pandas as pd
-iowa_file_path = '../input/home-data-for-ml-course/train.csv'
-home_data = pd.read_csv(iowa_file_path)
-```
-
-### Selecting Features and Target
-```python
-y = home_data.SalePrice
-feature_names = ['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 
-                 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']
-X = home_data[feature_names]
-```
-
-### Building and Training the Model
-```python
-from sklearn.tree import DecisionTreeRegressor
-iowa_model = DecisionTreeRegressor(random_state=1)
-iowa_model.fit(X, y)
-```
-
-### Making Predictions
-```python
-predictions = iowa_model.predict(X)
-```
-
-## Results
-The model successfully trains and makes predictions on the Iowa housing dataset. The predictions are stored in the `predictions` variable.
-
-## What's Next
-This is just the beginning! Next steps include:
-- Model validation and evaluation
-- Understanding metrics like MAE (Mean Absolute Error)
-- Preventing overfitting
-- Trying different models and comparing performance
 
 ## Course Progress
 - [x] Your First Machine Learning Model
-- [ ] Model Validation
+- [x] Model Validation
 - [ ] Underfitting and Overfitting
 - [ ] Random Forests
 - [ ] Exercise: Machine Learning Competitions
 
-## How to Run
-1. Visit the [Kaggle notebook](https://www.kaggle.com) (link to be added)
-2. Fork the notebook to your account
-3. Run all cells to reproduce the results
+## Key Learnings So Far
 
-Or locally:
+### From First Model:
+✅ How to load and prepare data
+✅ Building a Decision Tree model
+✅ Making predictions with trained models
+
+### From Model Validation:
+✅ The importance of train/test splits
+✅ Why in-sample predictions can be misleading
+✅ How to measure model accuracy with MAE
+✅ Proper model evaluation techniques
+
+## What's Next
+- Understanding overfitting and underfitting
+- Learning to optimize model parameters
+- Trying different algorithms (Random Forests)
+- Competing in Kaggle competitions
+
+## Installation & Setup
+
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/first-ml-model.git
+git clone https://github.com/Hashim-69/kaggel-ml-model.git
 
 # Install required packages
-pip install pandas scikit-learn jupyter
+pip install -r requirements.txt
 
-# Open the notebook
-jupyter notebook exercise-your-first-machine-learning-model.ipynb
+# Open notebooks
+jupyter notebook
 ```
 
-## Acknowledgments
+## Repository Structure
+```
+kaggel-ml-model/
+├── exercise-your-first-machine-learning-model.ipynb
+├── exercise-model-validation.ipynb
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## Credits 
 - Kaggle's [Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course
 - Iowa Housing dataset provided by Kaggle
 
 ## Connect
-I'm documenting my ML learning journey and will be posting more projects as I progress. Feel free to follow along!
+Following my ML learning journey from zero to job-ready! More projects are coming as I progress through the course.
 
 ---
 
-*Last Updated: January 30, 2026*
+*Repository started: January 30, 2026*  
+*Last Updated: January 31, 2026*
