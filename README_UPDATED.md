@@ -16,7 +16,7 @@ My very first ML model! Built a **Decision Tree Regressor** to predict house pri
 - Training a scikit-learn model
 - Making predictions
 
-[View detailed README](./FIRST_MODEL_README.md)
+
 
 ---
 
@@ -102,17 +102,16 @@ kaggel-ml-model/
 ├── exercise-your-first-machine-learning-model.ipynb
 ├── exercise-model-validation.ipynb
 ├── README.md
-├── MODEL_VALIDATION_README.md
 ├── requirements.txt
 └── .gitignore
 ```
 
-## Acknowledgments
+## Credits 
 - Kaggle's [Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course
 - Iowa Housing dataset provided by Kaggle
 
 ## Connect
-Following my ML learning journey from zero to job-ready! More projects coming as I progress through the course.
+Following my ML learning journey from zero to job-ready! More projects are coming as I progress through the course.
 
 ---
 
